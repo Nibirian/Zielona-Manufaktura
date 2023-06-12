@@ -1,0 +1,68 @@
+@use "./colors" as *;
+
+@mixin respond-extra-large {
+	@media (min-width: 1200px) {
+		.triangle {
+			border-width: 30em 45em 0 0;
+		}
+		.logo {
+			position: absolute;
+			width: 19em;
+			height: 18em;
+			margin: 1em;
+			top: -20em;
+			left: 10em;
+			transform: translate(-50%, -50%);
+			background-image: url(../../dist/img/cropped-Zielona_Naklejka.Logo-removebg-preview-300x276.png);
+			background-size: cover;
+			z-index: 1;
+		}
+		.logo-bright {
+			// animation: lights-on 7s forwards, spark 10s 7s infinite;
+			background-image: url(../../dist/img/cropped-Zielona_Naklejka.Logo-removebg-preview-300x276-2.png);
+		}
+		.main-card {
+			height: 50em;
+		}
+		.contact {
+			&__title {
+				font-size: 3.5rem;
+			}
+			&__box {
+				font-size: 1.8rem;
+			}
+		}
+		.reasons {
+			padding: 0 10em 6em;
+			&__title {
+				padding: 2em 1em;
+				font-size: 3.5rem;
+			}
+			&__box {
+				&__text {
+					font-size: 1.8rem;
+					width: 50%;
+					& h3 {
+						padding-bottom: 0em;
+						font-size: 2.7rem;
+					}
+				}
+				&__image {
+					width: 50em;
+				}
+			}
+		}
+		h1.slider-page__title--big {
+			font-size: 3.3rem;
+		}
+		.slider-page__title {
+			font-size: 2.5rem;
+		}
+		.slider-page__content {
+			padding: 0 30% 0 30%;
+		}
+		.slider-page__description {
+			font-size: 2rem;
+		}
+	}
+}

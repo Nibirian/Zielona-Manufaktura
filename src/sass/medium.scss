@@ -1,0 +1,89 @@
+@use "./colors" as *;
+
+@mixin respond-medium {
+	@media (min-width: 768px) {
+		.footer {
+			&__info {
+				flex-direction: row;
+			}
+		}
+		.background-loading{
+			height: 80vh;
+		  }
+		//===============================================
+		.home-menu{
+			align-items: flex-start;
+		}
+		.cards {
+			display: flex;
+			margin-top: 0px;
+		}
+		.main-cards {
+			display: flex;
+			flex-direction: row;
+			height: auto;
+		}
+		.main-card {
+			height: 45em;
+			&-text {
+				display: block;
+				width: 25em;
+				padding: 2em;
+				& h2 {
+					transform: rotate(-90deg);
+					margin: auto;
+				}
+				& p {
+					font-size: 1.8rem;
+				}
+			}
+		}
+		.active .main-card-text-paragraph {
+			display: block;
+			position: absolute;
+			padding: 1em;
+			margin-left: 1em;
+			margin-right: 2em;
+			top: 10%;
+			animation: show-text 0.6s 0.6s forwards, show-bg 0.8s 0.8s forwards;
+		}
+		.home-menu {
+			& a {
+				width: 10%;
+			}
+		}
+		.active .home-menu a p {
+			text-align: left;
+			width: 19em;
+			animation: show-text 0.6s 0.6s forwards;
+		}
+		.active .main-card-btn {
+			display: flex;
+			position: absolute;
+			bottom: 10%;
+			left: 50%;
+			transform: translate(-50%);
+			font-size: 2rem;
+			animation: show-text 0.6s 0.6s forwards, show-bg2 0.8s 0.8s forwards;
+		}
+		//======================================================
+
+		.image-between {
+			background-image: url(../../dist/img/min/between-big.jpg);
+		}
+		.image-between-second {
+			background-image: url(../../dist/img/min/between-second-big.jpg);
+		}
+
+		//======================================================
+		.footer {
+			&__cr {
+				display: block;
+				text-align: center;
+			}
+			&__cr2 {
+				display: none;
+			}
+		}
+	}
+}

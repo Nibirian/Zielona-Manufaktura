@@ -1,0 +1,12 @@
+@use "./colors" as *;
+
+@mixin respond-mini {
+	@media (min-width: 369px) {
+        .active .main-card-text-paragraph {
+            line-height: 2;
+        }
+        .main-card-text p {
+            font-size: 1.8em;
+        }
+	}
+}

@@ -1,0 +1,135 @@
+@use "./colors" as *;
+@keyframes show-cookies {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes show-bg {
+	to {
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+}
+@keyframes show-bg2 {
+	to {
+		background-color: #e7bf0ec9;
+	}
+}
+@keyframes show-text {
+	from {
+		opacity: 0;
+	}
+	to {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+@keyframes lights-on {
+	from {
+		opacity: 0;
+	}
+	9% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	11% {
+		opacity: 0;
+	}
+	12% {
+		opacity: 1;
+	}
+	13% {
+		opacity: 0;
+	}
+	14% {
+		opacity: 1;
+	}
+	15% {
+		opacity: 0;
+	}
+	16% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 0;
+	}
+	18% {
+		opacity: 1;
+	}
+	22% {
+		opacity: 1;
+	}
+	23% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+@keyframes spark {
+	from {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+@keyframes disappear {
+	from {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@keyframes appear {
+	from {
+		visibility: visible;
+		opacity: 0;
+	}
+	to {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+@keyframes menu {
+	from {
+		opacity: 0;
+		transform: translateY(60px);
+	}
+	to {
+		visibility: visible;
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+// @keyframes highlights {
+// 	from {
+// 		background-color: $black2;
+// 	}
+// 	20% {
+// 		background-color: $black;
+// 	}
+// 	80% {
+// 		background-color: $black;
+// 	}
+// 	to {
+// 		background-color: $black2;
+// 	}
+// }

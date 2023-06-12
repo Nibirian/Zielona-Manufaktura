@@ -1,0 +1,185 @@
+@use "./colors" as *;
+
+@mixin respond-large {
+	@media (min-width: 992px) {
+		.hamburger {
+			display: none;
+		}
+		.company-name-big {
+			display: flex;
+			position: absolute;
+			left: 1em;
+			top: 50%;
+			transform: translate(0, -50%);
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 2.2rem;
+			color: $white;
+			transition: color .3s;
+			&:hover{
+				color: $light-green;
+			}
+		}
+		.icons {
+			display: flex;
+		}
+		.icons i {
+			display: flex;
+			padding: 0.2em 0.5em;
+			margin: 0 0.2em;
+			font-size: 2.3rem;
+			transition: color 0.3s;
+			&:hover {
+				color: $yellow;
+			}
+		}
+		.nav {
+			&-desktop {
+				display: flex;
+				justify-content: flex-end;
+				font-size: 2rem;
+			}
+		}
+		.nav-mobile {
+			display: none;
+		}
+		.triangle {
+			display: block;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 20em 30em 0 0;
+			border-color: $black transparent transparent transparent;
+			z-index: 101;
+			filter: drop-shadow(5px 5px 10px black);
+		}
+		.background-loading {
+			display: none;
+		}
+		.logo {
+			position: absolute;
+			width: 12em;
+			height: 12em;
+			top: -13em;
+			left: 7em;
+			transform: translate(-50%, -50%);
+			background-image: url(../../dist/img/cropped-Zielona_Naklejka.Logo-removebg-preview-300x276.png);
+			background-size: cover;
+			z-index: 1;
+		}
+		.top-bar {
+			display: none;
+		}
+		.goToTopBtn {
+			padding: 1.5em 3em;
+			& i {
+				font-size: 5rem;
+			}
+		}
+		.image-between{
+			display: block;
+		}
+		.cards {
+			animation: appear 3s forwards;
+		}
+		.aboutus {
+			&__title {
+				font-size: 3rem;
+				margin: 2em;
+			}
+			&__boxes {
+				flex-wrap: nowrap;
+			}
+			&__box {
+				font-size: 1.8rem;
+				&__icon {
+					font-size: 4rem;
+				}
+			}
+		}
+		.reasons {
+			padding: 2em 5em;
+			&__title {
+				font-size: 3rem;
+			}
+			&__box {
+				margin-bottom: 5em;
+				&__right {
+					flex-direction: row-reverse;
+					text-align: right;
+				}
+				&__text {
+					font-size: 1.5rem;
+					width: 50%;
+					padding: 2em 3em;
+					& h3 {
+						padding-bottom: 0em;
+						font-size: 2.3rem;
+					}
+				}
+				&__image {
+					display: block;
+					width: 40em;
+				}
+			}
+		}
+		
+
+		.gallery {
+			&__title {
+				font-size: 3rem;
+				padding: 2em;
+			}
+		}
+	
+		.swiper-container {
+			width: 80%;
+		}
+		.swiper-container.nav-slider {
+			display: block;
+		}
+		.counter-mobile{
+			display: none;
+		}
+		.counter {
+			display: block;
+			&__item {
+				margin: 4em 1em;
+				& i {
+					font-size: 4rem;
+					margin-bottom: 0.3em;
+				}
+				& p {
+					font-size: 2.5rem;
+					margin-top: 1em;
+				}
+			}
+		}
+		.contact {
+			&__title {
+				font-size: 3rem;
+				padding: 2em;
+			}
+			&__box {
+				font-size: 1.4rem;
+				padding-bottom: 3em;
+			}
+			&__icon {
+				padding-bottom: 1em;
+			}
+		}
+		.slider-pages {
+			display: block;
+		}
+		.subpage{
+			display: none;
+		}
+		.footer-secondary{
+			display: none;
+		}
+		
+	}
+}

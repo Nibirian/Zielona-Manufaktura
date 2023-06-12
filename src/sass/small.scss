@@ -1,0 +1,8 @@
+@use "./colors" as *;
+
+@mixin respond-small {
+	@media (min-width: 576px) {
+        .cookie-box {
+			font-size: 2rem;
+		}
+    }}
