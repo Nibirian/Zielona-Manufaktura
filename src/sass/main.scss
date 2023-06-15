@@ -412,7 +412,6 @@ ul ul ul {
 }
 
 //=================================================
-
 .cards {
 	visibility: hidden;
 	display: flex;
@@ -507,13 +506,13 @@ ul ul ul {
 	animation: show-text 0.4s 0.4s forwards, show-bg 0.4s 0.4s forwards;
 }
 .house {
-	background-image: url(../../dist/img/min/house.jpg);
+	background-image: url(../../dist/img/thumbs/house.jpg);
 }
 .company {
 	background-image: url(../../dist/img/min/facade-523876_640.jpg);
 }
 .farmer {
-	background-image: url(../../dist/img/min/farmer-min.jpg);
+	background-image: url(../../dist/img/thumbs/farmer.jpg);
 }
 
 .house::before,
@@ -760,6 +759,7 @@ ul ul ul {
 [class^="swiper-button-"] {
 	transition: all 0.3s ease;
 } 
+
 .swiper-slide {
 	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;

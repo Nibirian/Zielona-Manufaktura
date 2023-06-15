@@ -82,6 +82,15 @@
 		.image-between{
 			display: block;
 		}
+		.house {
+			background-image: url(../../dist/img/min/house.jpg);
+		}
+		.company {
+			background-image: url(../../dist/img/min/facade-523876_640.jpg);
+		}
+		.farmer {
+			background-image: url(../../dist/img/min/farmer-min.jpg);
+		}
 		.cards {
 			animation: appear 3s forwards;
 		}
@@ -134,7 +143,12 @@
 				padding: 2em;
 			}
 		}
-	
+		
+		.swiper-slide {
+			backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+			display: block;
+		}
 		.swiper-container {
 			width: 80%;
 		}
